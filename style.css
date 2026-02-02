@@ -1,73 +1,49 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* Basic Body Styling */
 body {
-    background: #111;
-    color: #fff;
-}
-
-/* Header */
-header {
+    font-family: Arial, sans-serif;
+    background: #111;      /* Dark background */
+    color: #fff;           /* White text */
     text-align: center;
-    padding: 30px;
-    background: #000;
+    margin: 0;
 }
 
-.logo {
-    width: 90px;
+/* Headings */
+h1, h2 {
+    color: #00ff99;       /* Neon green headings */
+    margin: 20px 0 10px 0;
 }
 
-header h1 {
-    font-size: 32px;
-    margin-top: 10px;
-}
-
-/* Nav */
+/* Navigation Links */
 nav {
-    display: flex;
-    justify-content: center;
-    background: #1a1a1a;
-    padding: 10px;
+    margin: 15px 0;
 }
 
 nav a {
-    color: #fff;
+    color: #00ff99;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #00ff99;
+    color: #ffffff;
 }
 
-/* Sections */
-section {
-    padding: 40px;
-}
-
-section h2 {
-    margin-bottom: 20px;
-    color: #00ff99;
-}
-
-/* Grid */
+/* Main Content Grid (for cards if any) */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: flex;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
-/* Card */
+/* Card Styling */
 .card {
-    background: #1b1b1b;
+    background: #222;
     padding: 15px;
     border-radius: 8px;
-    text-align: center;
+    width: 200px;
 }
 
 .card img {
@@ -75,30 +51,22 @@ section h2 {
     border-radius: 5px;
 }
 
-.card h3 {
-    margin: 10px 0;
-}
-
 .card a {
     display: inline-block;
-    padding: 8px 15px;
+    margin-top: 10px;
+    padding: 8px 12px;
     background: #00ff99;
     color: #000;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 5px;
     font-weight: bold;
-}
-
-.card a:hover {
-    background: #00cc77;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 15px;
-    background: #000;
+    background: #111;
+    color: #888;
+    padding: 15px 0;
     margin-top: 30px;
 }
-
 
